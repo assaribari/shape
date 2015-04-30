@@ -1,6 +1,6 @@
 package shape;
 
-public class Point {
+public class Point implements Drawable {
 
 	private int x;
 	private int y;
@@ -32,5 +32,11 @@ public class Point {
 		}else{
 			System.out.println("좌표[x="+x+",y="+y+"]에 점을 지웠습니다.");
 		}
+	}
+	
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		
 	}
 }

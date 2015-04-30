@@ -21,14 +21,26 @@ public class ShapeApp {
 //		point4.setY(30);
 //		point4.setColor("red");
 //		point4.show();
-		Shape non = new Shape();
 	    Shape rect = new Rect();
 	    Shape circle = new Circle();
 	    
-	    non.draw();
-	    rect.draw();
-	    circle.draw();
+//	    rect.draw();
+//	    circle.draw();
 
+		Drawable drawable = new Point(10, 20);
+		drawable.draw();
+	
+		// instanceof 테스트
+		Circle c = new Circle();
+		
+		System.out.println(c instanceof Circle);
+		System.out.println(c instanceof Shape);
+		System.out.println(c instanceof Drawable);
+		
+//		System.out.println(c instanceof Rect);     //Error!!
+		
+		Shape s = c;
+		System.out.println(s instanceof Rect);
 		
 	}
 
